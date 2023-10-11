@@ -1,4 +1,4 @@
-streamlit
-yfinance
-pandas
-time
+streamlit == 1.27.1
+yfinance == 0.2.31
+pandas == 2.1.1
+
