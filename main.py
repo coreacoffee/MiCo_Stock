@@ -6,9 +6,9 @@ import time
 
 st.title('MiCo BioMed Co., Ltd.')
 
-samsung = yf.Ticker('214610.KQ') 
+mico = yf.Ticker('214610.KQ') 
 
-historical_data = samsung.history(period="14d") 
+historical_data = mico.history(period="14d") 
 
 update_interval = 1  
 
@@ -18,7 +18,7 @@ current_price_text = st.empty()
 
 while True:
 
-    new_data = samsung.history(period="1d")
+    new_data = mico.history(period="1d")
 
     historical_data = pd.concat([historical_data, new_data])
 
