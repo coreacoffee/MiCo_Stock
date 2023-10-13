@@ -3,7 +3,7 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 import time
 
-st.title('MiCo BioMed Co., Ltd.')
+st.title('Stock Price Real-Time Chart')
 text_input = st.text_input("Enter a stock symbol 👇")
 mico = None
 if text_input:
