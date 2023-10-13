@@ -5,8 +5,6 @@ import time
 
 st.title('MiCo BioMed Co., Ltd.')
 text_input = st.text_input("Enter a stock symbol 👇")
-
-# Create a Ticker object when a valid stock symbol is provided
 mico = None
 if text_input:
     mico = yf.Ticker(text_input)
@@ -35,7 +33,6 @@ while True:
                 current_price_text.text(f'Real-time price: ({latest_time}) {current_price}')
         time.sleep(1)
     except IndexError:
-        # Handle the "IndexError" when it occurs, e.g., when there's no data available
         current_price_text.text("No data available for the specified stock symbol.")
-        time.sleep(60)  # Sleep for a longer time to avoid frequent retries
+        time.sleep(60) 
 
